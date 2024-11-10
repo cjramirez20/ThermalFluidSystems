@@ -202,7 +202,7 @@ for i = 1:length(fuel_flow_kg_per_s)
     [u48s, h48s, s48s_0, s48s] = thermo_properties(P48s, T48s);
     
     % State 48 (Efficiency)
-    w_t1 = abs(w_c1) + abs(w_c2);
+    % w_t1 = abs(w_c1) + abs(w_c2);
     % h48 = h4 - w_t1/m4_dot; % kj/kg
     h48=h4-(eta_t1*(h4-h48s)); % uncomment this if you want to use base
     % case efficiency instead
